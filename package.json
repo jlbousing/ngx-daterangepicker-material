@@ -1,7 +1,7 @@
 {
-  "name": "ngx-daterangepicker-material",
+  "name": "ngx-daterangepicker-material-twinny",
   "version": "6.0.4",
-  "description": "Angular 9 and 10 date range picker (with material design theme)",
+  "description": "Fork of ngx-daterangepicker-material by Fetrarijaona R to solve Twinny App's requirement",
   "keywords": [
     "angular2",
     "angular4",
@@ -41,10 +41,10 @@
     "copy:schematics": "cpr schematics/dist dist/schematics && cp ./schematics/collection.json ./dist/schematics && cp ./schematics/ng-add/schema.json ./dist/schematics/ng-add",
     "postbuild": "npm run build:schematics && npm run copy:schematics"
   },
-  "author": "Fetrarijaona R.",
+  "author": "Jorge L. Bou-saad",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fetrarij/ngx-daterangepicker-material.git"
+    "url": "https://github.com/jlbousing/ngx-daterangepicker-material.git"
   },
   "peerDependencies": {
     "dayjs": "^1.11.4"
@@ -106,7 +106,8 @@
   },
   "dependencies": {
     "dayjs": "^1.11.4",
-    "tslib": "^2.0.0"
+    "tslib": "^2.0.0",
+    "tailwindcss": "^3.2.6"
   },
   "schematics": "./schematics/collection.json"
 }
