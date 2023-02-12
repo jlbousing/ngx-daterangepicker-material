@@ -24,7 +24,7 @@
     "dayjs",
     "picker"
   ],
-  "homepage": "https://github.com/fetrarij/ngx-daterangepicker-material",
+  "homepage": "https://github.com/jlbousing/ngx-daterangepicker-material",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
