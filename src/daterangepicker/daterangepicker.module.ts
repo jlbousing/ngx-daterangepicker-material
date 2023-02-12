@@ -6,10 +6,11 @@ import { DaterangepickerComponent } from './daterangepicker.component';
 import { DaterangepickerDirective } from './daterangepicker.directive';
 import { LocaleConfig, LOCALE_CONFIG } from './daterangepicker.config';
 import { LocaleService } from './locale.service';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [DaterangepickerComponent, DaterangepickerDirective],
-  imports: [CommonModule, FormsModule, ReactiveFormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, MatCheckboxModule],
   providers: [],
   exports: [DaterangepickerComponent, DaterangepickerDirective]
 })
