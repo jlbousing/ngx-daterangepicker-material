@@ -1,6 +1,6 @@
 {
   "name": "ngx-daterangepicker-material-twinny",
-  "version": "6.0.5",
+  "version": "6.0.6",
   "description": "Fork of ngx-daterangepicker-material by Fetrarijaona R to solve Twinny App's requirement",
   "keywords": [
     "angular2",
