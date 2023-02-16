@@ -1,6 +1,6 @@
 {
   "name": "ngx-daterangepicker-material-twinny",
-  "version": "6.0.8",
+  "version": "6.0.9",
   "description": "Fork of ngx-daterangepicker-material by Fetrarijaona R to solve Twinny App's requirement",
   "keywords": [
     "angular2",
@@ -47,7 +47,8 @@
     "url": "https://github.com/jlbousing/ngx-daterangepicker-material.git"
   },
   "peerDependencies": {
-    "dayjs": "^1.11.4"
+    "dayjs": "^1.11.4",
+    "tailwindcss": "^3.2.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^13.3.9",
@@ -106,8 +107,7 @@
   },
   "dependencies": {
     "dayjs": "^1.11.4",
-    "tslib": "^2.0.0",
-    "tailwindcss": "^3.2.6"
+    "tslib": "^2.0.0"
   },
   "schematics": "./schematics/collection.json"
 }
