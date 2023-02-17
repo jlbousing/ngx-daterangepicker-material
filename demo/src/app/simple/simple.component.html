@@ -49,9 +49,9 @@
 <div class="row">
     <div class="col s12">
         <h3>Inline daterangepicker</h3>
-        <ngx-daterangepicker-material
+        <ngx-daterangepicker-material-twinny
             (choosedDate)="chosenDate($event)"
-            [locale]="{ applyLabel: 'Done', firstDay: 1 }"></ngx-daterangepicker-material>
+            [locale]="{ applyLabel: 'Done', firstDay: 1 }"></ngx-daterangepicker-material-twinny>
         <br />
         Chosen date: {{ inlineDate | json }}
     </div>
@@ -60,7 +60,7 @@
 <div class="row">
     <div class="col s12">
         <h3>Inline daterangepicker with time and auto-apply</h3>
-        <ngx-daterangepicker-material
+        <ngx-daterangepicker-material-twinny
             (choosedDate)="chosenDateTime($event)"
             [autoApply]="true"
             [timePicker24Hour]="true"
@@ -68,7 +68,7 @@
             [startDate]="selected?.startDate"
             [endDate]="selected?.endDate"
             [timePicker]="true"
-            [locale]="{ applyLabel: 'Done', firstDay: 1 }"></ngx-daterangepicker-material>
+            [locale]="{ applyLabel: 'Done', firstDay: 1 }"></ngx-daterangepicker-material-twinny>
         <br />
         <p>Chosen date (after changes): {{ selected | json }}</p>
         <button (click)="increaseDate()">Add a day</button>

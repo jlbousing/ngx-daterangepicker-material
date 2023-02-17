@@ -144,7 +144,7 @@ interface VisibleCalendar {
 }
 
 @Component({
-  selector: 'ngx-daterangepicker-material',
+  selector: 'ngx-daterangepicker-material-twinny',
   styleUrls: ['./daterangepicker.component.scss'],
   templateUrl: './daterangepicker.component.html',
   encapsulation: ViewEncapsulation.None,
