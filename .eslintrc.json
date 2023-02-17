@@ -60,7 +60,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "ngx-daterangepicker-material",
+            "prefix": "ngx-daterangepicker-material-twinny",
             "style": "camelCase"
           }
         ],
@@ -68,7 +68,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "ngx-daterangepicker-material",
+            "prefix": "ngx-daterangepicker-material-twinny",
             "style": "kebab-case"
           }
         ]
