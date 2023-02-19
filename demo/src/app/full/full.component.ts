@@ -66,4 +66,8 @@ export class FullComponent implements OnInit {
     // eslint-disable-next-line no-console
     console.log('datepicker cleared');
   }
+
+  testing(value: any) {
+    console.log("testing ",value);
+  }
 }

@@ -45,6 +45,8 @@ export class DaterangepickerDirective implements OnInit, OnChanges, DoCheck {
   @Output() startDateChanged: EventEmitter<StartDate> = new EventEmitter();
   @Output() endDateChanged: EventEmitter<EndDate> = new EventEmitter();
   @Output() clearClicked: EventEmitter<void> = new EventEmitter();
+  @Output() activePreviousPeriodEmitter: EventEmitter<boolean> = new EventEmitter();
+  @Output() activePreviousPeriodPreviousYearEmitter: EventEmitter<boolean> = new EventEmitter();
 
   @Input()
   minDate: dayjs.Dayjs;
@@ -318,6 +320,15 @@ export class DaterangepickerDirective implements OnInit, OnChanges, DoCheck {
         }
       }
     });
+    
+    this.picker.activePreviousPeriodEmitter.asObservable().subscribe((change: boolean) => {
+      this.activePreviousPeriodEmitter.emit(change);
+    });
+
+    this.picker.activePreviousPeriodPreviousYearEmitter.asObservable().subscribe((change: boolean) => {
+      this.activePreviousPeriodPreviousYearEmitter.emit(change);
+    })
+
     this.picker.firstMonthDayClass = this.firstMonthDayClass;
     this.picker.lastMonthDayClass = this.lastMonthDayClass;
     this.picker.emptyWeekRowClass = this.emptyWeekRowClass;

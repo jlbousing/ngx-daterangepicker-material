@@ -260,8 +260,8 @@ export class DaterangepickerComponent implements OnInit, OnChanges {
   @Output() endDateChanged: EventEmitter<EndDate>;
   @Output() cancelClicked: EventEmitter<void>;
   @Output() clearClicked: EventEmitter<void>;
-  @Output() activePreviousPeriodEmitter: EventEmitter<boolean> = new EventEmitter();
-  @Output() activePreviousPeriodPreviousYearEmitter: EventEmitter<boolean> = new EventEmitter();
+  @Output() activePreviousPeriodEmitter: EventEmitter<boolean>;
+  @Output() activePreviousPeriodPreviousYearEmitter: EventEmitter<boolean>;
   @ViewChild('pickerContainer', { static: true }) pickerContainer: ElementRef;
 
   public chosenLabel: string;
@@ -304,6 +304,8 @@ export class DaterangepickerComponent implements OnInit, OnChanges {
     this.endDateChanged = new EventEmitter();
     this.cancelClicked = new EventEmitter();
     this.clearClicked = new EventEmitter();
+    this.activePreviousPeriodEmitter = new EventEmitter();
+    this.activePreviousPeriodPreviousYearEmitter = new EventEmitter();
   }
 
   // accessors
