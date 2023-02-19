@@ -247,6 +247,9 @@ export class DaterangepickerComponent implements OnInit, OnChanges {
   @Input()
   customRangeDirection = false;
 
+  previousPeriod: boolean = false;
+  previousPeriodPreviousYear: boolean = false;
+
   @Input() drops: string;
   @Input() opens: string;
   @Input() closeOnAutoApply = true;
@@ -257,6 +260,8 @@ export class DaterangepickerComponent implements OnInit, OnChanges {
   @Output() endDateChanged: EventEmitter<EndDate>;
   @Output() cancelClicked: EventEmitter<void>;
   @Output() clearClicked: EventEmitter<void>;
+  @Output() activePreviousPeriodEmitter: EventEmitter<boolean> = new EventEmitter();
+  @Output() activePreviousPeriodPreviousYearEmitter: EventEmitter<boolean> = new EventEmitter();
   @ViewChild('pickerContainer', { static: true }) pickerContainer: ElementRef;
 
   public chosenLabel: string;
@@ -1567,5 +1572,13 @@ export class DaterangepickerComponent implements OnInit, OnChanges {
       }
       this.calendarVariables[side].classes[row].classList = rowClasses.join(' ');
     }
+  }
+
+  activatePreviousPeriod() {
+    this.activePreviousPeriodEmitter.emit(this.previousPeriod);
+  }
+
+  activatePreviousPeriodPreviousYear() {
+    this.activePreviousPeriodPreviousYearEmitter.emit(this.previousPeriodPreviousYear);
   }
 }
